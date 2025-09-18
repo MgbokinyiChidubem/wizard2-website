@@ -1,22 +1,16 @@
-
-
 {
   "name": "my-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/MgbokinyiChidubem/wizard2-website",
-
+  "homepage": "https://github.com/MgbokinyiChidubem.github.io/wizard2-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    
-  
-  "predeploy": "npm run build",
-
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "set GH_PAGES_CACHE=C:\\temp\\gh-pages-cache&& gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.1",
